@@ -55,9 +55,10 @@ func main() {
 					errCode := sqlite.ErrCode(errors.Cause(err))
 					switch errCode {
 					case sqlite.SQLITE_INTERRUPT:
-						log.Printf("%d 🛑 %s after deadline (%s duration)", n, duration-deadline, duration)
-						if deadline-duration > 1*time.Second {
-							log.Printf("%d ⏰⏰⏰ ding ding ding we got interrupted way too soon", n)
+						if duration < deadline {
+							log.Printf("%d ⏰⏰⏰ we got interrupted %s before the deadline (%s duration)", n, deadline-duration, duration)
+						} else {
+							log.Printf("%d 🛑 %s after deadline (%s duration)", n, duration-deadline, duration)
 						}
 						return
 					case sqlite.SQLITE_LOCKED:
