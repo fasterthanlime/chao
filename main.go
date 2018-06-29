@@ -30,23 +30,28 @@ func main() {
 	c, err := hades.NewContext(consumer, models...)
 	must(err)
 
-	pool, err := sqlite.Open("database.db", 0, 10)
+    poolSize := 1
+	// pool, err := sqlite.Open("database.db", 0, poolSize)
+    pool, err := sqlite.Open("file:memory:?mode=memory", 0, poolSize)
 	must(err)
 
-	conn := pool.Get(context.Background().Done())
-	defer pool.Put(conn)
-
-	err = c.AutoMigrate(conn)
+	migConn := pool.Get(context.Background().Done())
+	err = c.AutoMigrate(migConn)
+	pool.Put(migConn)
 	must(err)
 
 	names := []string{
 		"Tess", "Daniel", "Rusty", "Linus", "Saul", "Terry", "Basher",
 	}
 
+    log.SetFlags(0)
+
 	var step func(n int, prng *rand.Rand)
 	step = func(n int, prng *rand.Rand) {
 		startTime := time.Now()
-		deadline := time.Duration(100*(20+10*prng.Int63n(2))) * time.Millisecond
+		// deadline := time.Duration(100*(8+3*prng.Int63n(2))) * time.Millisecond
+		deadline := 500 * time.Millisecond
+        var conn *sqlite.Conn
 
 		defer func() {
 			if r := recover(); r != nil {
@@ -56,29 +61,33 @@ func main() {
 					switch errCode {
 					case sqlite.SQLITE_INTERRUPT:
 						if duration < deadline {
-							log.Printf("%d ⏰⏰⏰ we got interrupted %s before the deadline (%s duration)", n, deadline-duration, duration)
+							log.Printf("%d !!!! [%p] interrupted %s before deadline (%s duration)", n, conn, deadline-duration, duration)
+                            // log.Printf("interrupt stack: %+v", err)
 						} else {
-							log.Printf("%d 🛑 %s after deadline (%s duration)", n, duration-deadline, duration)
+							log.Printf("%d //// [%p] %s after deadline (%s duration)", n, conn, duration-deadline, duration)
 						}
 						return
 					case sqlite.SQLITE_LOCKED:
-						log.Printf("%d 🔒 locked", n)
+						log.Printf("%d XXXX [%p] locked", n, conn)
 						lockSleep := time.Duration(50+prng.Int63n(50)) * time.Millisecond
 						time.Sleep(lockSleep)
 						step(n+1, prng)
 						return
+                    case sqlite.SQLITE_MISUSE:
+                        log.Printf("%d ZZZZ [%p] misuse", n, conn)
+                        return
 					default:
-						log.Printf("%d 🔫 a new challenger appears: %+v", n, errCode)
+                        log.Printf("%d ???? [%p] a new challenger appears: %+v", n, conn, err)
 						return
 					}
 				}
-				log.Printf("%d 🔥 %s / %s: %s", n, duration, deadline, r)
+				log.Printf("%d (((( [%p] %s (%s / %s)", n, conn, r, duration, deadline)
 			} else {
 				duration := time.Since(startTime)
 				if duration >= deadline {
-					log.Printf("%d 👍 ⚠️  %s late", n, duration-deadline)
+					log.Printf("%d +++- ⚠️  %s late", n, duration-deadline)
 				} else {
-					log.Printf("%d 👍 %s early", n, deadline-duration)
+					log.Printf("%d ++++ %s early", n, deadline-duration)
 				}
 			}
 		}()
@@ -86,27 +95,29 @@ func main() {
 		ctx, cancel := context.WithTimeout(context.Background(), deadline)
 		defer cancel()
 
-		conn := pool.Get(ctx.Done())
+		conn = pool.Get(ctx.Done())
 		if conn == nil {
-			panic("we got a nil conn :o")
+			panic("pool timeout")
 		}
 		defer pool.Put(conn)
 
-		records := make([]*Human, 2*1000)
-		id := prng.Int63n(256 * 1024)
+		records := make([]*Human, 30*1000)
+		// id := prng.Int63n(256 * 1024)
+        id := int64(0)
 
 		for i := range records {
 			records[i] = &Human{
 				ID:   id,
 				Name: names[prng.Intn(len(names))],
 			}
-			id += prng.Int63n(256)
+			// id += prng.Int63n(256)
+            id += 1
 		}
 
 		must(c.Save(conn, records))
 	}
 
-	numSteps := 3
+	numSteps := 10
 	done := make(chan bool)
 	worker := func() {
 		prng := rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -117,7 +128,7 @@ func main() {
 
 	globalStartTime := time.Now()
 
-	numWorkers := 100
+	numWorkers := 3
 	log.Printf("Spinning up %d workers doing %d steps...", numWorkers, numSteps)
 	for i := 0; i < numWorkers; i++ {
 		go func() {
@@ -128,7 +139,6 @@ func main() {
 
 	for i := 0; i < numWorkers; i++ {
 		<-done
-		log.Printf("Worker joined...")
 	}
 
 	globalDuration := time.Since(globalStartTime)
