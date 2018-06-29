@@ -1,32 +1,273 @@
-Spinning up 3 workers doing 10 steps...
-0 .... [0x0] pool timeout (40.0293ms / 40ms)
-0 .... [0xc042181bd0] interrupted 29.3µs after deadline (40.0293ms duration)
-0 .... [0x0] pool timeout (40.0293ms / 40ms)
-0 .... [0xc042181bd0] succeeded 7.9792ms early
-0 .... [0x0] pool timeout (40.0262ms / 40ms)
-0 .... [0xc042181bd0] interrupted 26.2µs after deadline (40.0262ms duration)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0x0] pool timeout (40.5255ms / 40ms)
-0 .... [0xc042181bd0] interrupted 525.5µs after deadline (40.5255ms duration)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0x0] pool timeout (40.526ms / 40ms)
-0 .... [0xc042181bd0] interrupted 526µs after deadline (40.526ms duration)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0x0] pool timeout (40.5286ms / 40ms)
-0 .... [0xc042181bd0] interrupted 528.6µs after deadline (40.5286ms duration)
-0 .... [0xc042181bd0] interrupted 525µs after deadline (40.525ms duration)
-0 .... [0x0] pool timeout (40.0262ms / 40ms)
-0 .... [0xc042181bd0] interrupted 26.2µs after deadline (40.0262ms duration)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0x0] pool timeout (40.0272ms / 40ms)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0xc042181bd0] interrupted 27.2µs after deadline (40.0272ms duration)
-0 .... [0xc042181bd0] interrupted 1.5261ms after deadline (41.5261ms duration)
-0 !!!! [0xc042181bd0] misuse
-0 .... [0xc042181bd0] interrupted 1.0279ms after deadline (41.0279ms duration)
-0 .... [0xc042181bd0] interrupted 528.6µs after deadline (40.5286ms duration)
-0 .... [0xc042181bd0] interrupted 528.6µs after deadline (40.5286ms duration)
-0 .... [0xc042181bd0] interrupted 26.7µs after deadline (40.0267ms duration)
-0 .... [0xc042181bd0] interrupted 26.7µs after deadline (40.0267ms duration)
-0 .... [0xc042181bd0] interrupted 25.7µs after deadline (40.0257ms duration)
-All done in 406.2716ms
+Spinning up 25 workers doing 5 steps...
+  0 .... [0xc0421adc70] locked
+  0 ...- [0xc0421adbd0] succeeded 799.865ms early
+  0 .... [0xc0421adbd0] locked
+  0 ...- [0xc0421adc70] succeeded 521.6784ms early
+  0 ...- [0xc0421adbd0] succeeded 410.6068ms early
+  0 ...- [0xc0421adc70] succeeded 397.5992ms early
+  0 ...- [0xc0421adbd0] succeeded 289.5245ms early
+  0 ...- [0xc0421adc70] succeeded 266.5091ms early
+  0 ...- [0xc0421adbd0] succeeded 155.4371ms early
+  0 ...- [0xc0421adc70] succeeded 138.4257ms early
+  0 ...- [0xc0421adbd0] succeeded 31.3517ms early
+  0 ...- [0xc0421adc70] succeeded 19.3442ms early
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0x0] pool timeout (1.0006707s / 1s)
+  0 .... [0xc0421adc70] interrupted 670.7µs after deadline (1.0006707s duration)
+  0 .... [0xc0421adbd0] interrupted 670.7µs after deadline (1.0006707s duration)
+  0 XXXX [0xc0421adbd0] interrupted 184.4554ms before deadline (815.5446ms duration)
+  1 .... [0xc0421adc70] interrupted 13.6748ms after deadline (1.0136748s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 670.7µs after deadline (1.0006707s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 1.6673ms after deadline (1.0016673s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 667.6µs after deadline (1.0006676s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 12.6735ms after deadline (1.0126735s duration)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0xc0421adbd0] interrupted 7.6687ms after deadline (1.0076687s duration)
+  0 .... [0xc0421adc70] interrupted 9.67ms after deadline (1.00967s duration)
+  0 .... [0xc0421adbd0] interrupted 3.6671ms after deadline (1.0036671s duration)
+  0 .... [0xc0421adc70] interrupted 9.6731ms after deadline (1.0096731s duration)
+  1 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 667.6µs after deadline (1.0006676s duration)
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 667.1µs after deadline (1.0006671s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  1 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 667.7µs after deadline (1.0006677s duration)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0x0] pool timeout (1.0006671s / 1s)
+  0 .... [0xc0421adbd0] interrupted 1.6688ms after deadline (1.0016688s duration)
+  0 .... [0x0] pool timeout (1.0006697s / 1s)
+  0 .... [0xc0421adbd0] interrupted 2.671ms after deadline (1.002671s duration)
+  0 .... [0xc0421adc70] interrupted 27.6867ms after deadline (1.0276867s duration)
+  0 .... [0xc0421adbd0] interrupted 10.6764ms after deadline (1.0106764s duration)
+  0 .... [0xc0421adc70] interrupted 18.6822ms after deadline (1.0186822s duration)
+  2 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 667.7µs after deadline (1.0006677s duration)
+  1 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  1 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 669.2µs after deadline (1.0006692s duration)
+  2 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 670.2µs after deadline (1.0006702s duration)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006677s / 1s)
+  0 .... [0x0] pool timeout (1.0006692s / 1s)
+  0 .... [0xc0421adbd0] interrupted 2.6716ms after deadline (1.0026716s duration)
+  0 .... [0x0] pool timeout (1.0006681s / 1s)
+  0 .... [0xc0421adbd0] interrupted 2.6694ms after deadline (1.0026694s duration)
+  0 .... [0xc0421adbd0] interrupted 665.6µs after deadline (1.0006656s duration)
+  0 .... [0xc0421adc70] interrupted 39.6937ms after deadline (1.0396937s duration)
+  0 .... [0xc0421adbd0] interrupted 15.6684ms after deadline (1.0156684s duration)
+  0 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 668.6µs after deadline (1.0006686s duration)
+  2 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 668.6µs after deadline (1.0006686s duration)
+  2 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 3.6665ms after deadline (1.0036665s duration)
+  3 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 666µs after deadline (1.000666s duration)
+  0 .... [0x0] pool timeout (1.0006676s / 1s)
+  0 .... [0x0] pool timeout (1.0006676s / 1s)
+  0 .... [0x0] pool timeout (1.0006676s / 1s)
+  0 .... [0x0] pool timeout (1.0006676s / 1s)
+  0 .... [0x0] pool timeout (1.0006676s / 1s)
+  0 .... [0x0] pool timeout (1.000665s / 1s)
+  0 .... [0x0] pool timeout (1.000666s / 1s)
+  0 .... [0xc0421adbd0] interrupted 3.6711ms after deadline (1.0036711s duration)
+  0 .... [0x0] pool timeout (1.0006682s / 1s)
+  0 .... [0xc0421adbd0] interrupted 4.6698ms after deadline (1.0046698s duration)
+  0 .... [0xc0421adc70] interrupted 22.6838ms after deadline (1.0226838s duration)
+  0 .... [0xc0421adbd0] interrupted 668.6µs after deadline (1.0006686s duration)
+  0 .... [0xc0421adc70] interrupted 668.6µs after deadline (1.0006686s duration)
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 730.3µs after deadline (1.0007303s duration)
+  4 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  3 .... [0xc0421adbd0] interrupted 729.7µs after deadline (1.0007297s duration)
+  4 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  3 .... [0xc0421adbd0] interrupted 726.7µs after deadline (1.0007267s duration)
+  3 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  4 .... [0xc0421adbd0] interrupted 729.2µs after deadline (1.0007292s duration)
+  0 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  5 .... [0xc0421adbd0] interrupted 665.1µs after deadline (1.0006651s duration)
+  5 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 726.1µs after deadline (1.0007261s duration)
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  2 .... [0xc0421adbd0] interrupted 729.2µs after deadline (1.0007292s duration)
+  1 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  6 .... [0xc0421adc70] locked
+  2 .... [0xc0421adbd0] interrupted 730.3µs after deadline (1.0007303s duration)
+  2 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  2 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  7 .... [0xc0421adc70] locked
+  2 .... [0xc0421adbd0] interrupted 670.7µs after deadline (1.0006707s duration)
+  3 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  8 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 667.1µs after deadline (1.0006671s duration)
+  0 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  4 .... [0xc0421adbd0] interrupted 668.1µs after deadline (1.0006681s duration)
+  9 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 667.1µs after deadline (1.0006671s duration)
+ 10 .... [0xc0421adc70] locked
+  6 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+ 11 .... [0xc0421adc70] locked
+  5 .... [0xc0421adbd0] interrupted 9.2µs after deadline (1.0000092s duration)
+  7 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+ 12 .... [0xc0421adc70] locked
+  8 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 665.6µs after deadline (1.0006656s duration)
+  2 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+ 13 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  9 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  4 .... [0xc0421adbd0] interrupted 666.1µs after deadline (1.0006661s duration)
+  2 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+ 10 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+ 14 .... [0xc0421adbd0] interrupted 666.1µs after deadline (1.0006661s duration)
+  2 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+ 11 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  2 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  2 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  6 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 664.6µs after deadline (1.0006646s duration)
+  7 .... [0xc0421adc70] locked
+  0 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+  8 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  6 .... [0xc0421adc70] locked
+  9 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+  7 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  8 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+  9 .... [0xc0421adc70] locked
+  5 .... [0xc0421adc70] locked
+ 10 .... [0xc0421adc70] locked
+  6 .... [0xc0421adc70] locked
+ 10 .... [0xc0421adbd0] interrupted 669.2µs after deadline (1.0006692s duration)
+ 11 .... [0xc0421adc70] locked
+  7 .... [0xc0421adc70] locked
+ 12 .... [0xc0421adc70] locked
+  8 .... [0xc0421adc70] locked
+ 13 .... [0xc0421adc70] locked
+  9 .... [0xc0421adc70] locked
+ 14 .... [0xc0421adc70] locked
+ 10 .... [0xc0421adc70] locked
+ 15 .... [0xc0421adc70] locked
+  0 .... [0xc0421adbd0] interrupted 669.7µs after deadline (1.0006697s duration)
+ 11 .... [0xc0421adc70] locked
+ 12 .... [0xc0421adc70] locked
+ 13 .... [0xc0421adc70] locked
+ 14 .... [0xc0421adc70] locked
+ 15 .... [0xc0421adc70] locked
+ 16 .... [0xc0421adc70] locked
+ 16 .... [0xc0421adbd0] interrupted 274.5µs after deadline (1.0002745s duration)
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adc70] locked
+  2 .... [0xc0421adc70] locked
+  3 .... [0xc0421adc70] locked
+  4 .... [0xc0421adc70] locked
+ 17 .... [0xc0421adbd0] interrupted 984.8µs after deadline (1.0009848s duration)
+  5 .... [0xc0421adc70] locked
+  6 .... [0xc0421adbd0] interrupted 12.4376ms after deadline (1.0124376s duration)
+  0 .... [0xc0421adc70] locked
+  1 .... [0xc0421adbd0] interrupted 2.2794ms after deadline (1.0022794s duration)
+All done in 22.0950295s

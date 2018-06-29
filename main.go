@@ -30,7 +30,7 @@ func main() {
 	c, err := hades.NewContext(consumer, models...)
 	must(err)
 
-    poolSize := 1
+    poolSize := 2
 	// pool, err := sqlite.Open("database.db", 0, poolSize)
     pool, err := sqlite.Open("file:memory:?mode=memory", 0, poolSize)
 	must(err)
@@ -50,7 +50,7 @@ func main() {
 	step = func(n int, prng *rand.Rand) {
 		startTime := time.Now()
 		// deadline := time.Duration(100*(8+3*prng.Int63n(2))) * time.Millisecond
-		deadline := 40 * time.Millisecond
+		deadline := 1000 * time.Millisecond
         var conn *sqlite.Conn
 
 		defer func() {
@@ -61,33 +61,33 @@ func main() {
 					switch errCode {
 					case sqlite.SQLITE_INTERRUPT:
 						if duration < deadline {
-							log.Printf("%d XXXX [%p] interrupted %s before deadline (%s duration)", n, conn, deadline-duration, duration)
+							log.Printf("%3d XXXX [%p] interrupted %s before deadline (%s duration)", n, conn, deadline-duration, duration)
                             // log.Printf("interrupt stack: %+v", err)
 						} else {
-							log.Printf("%d .... [%p] interrupted %s after deadline (%s duration)", n, conn, duration-deadline, duration)
+							log.Printf("%3d .... [%p] interrupted %s after deadline (%s duration)", n, conn, duration-deadline, duration)
 						}
 						return
 					case sqlite.SQLITE_LOCKED:
-						log.Printf("%d .... [%p] locked", n, conn)
+						log.Printf("%3d .... [%p] locked", n, conn)
 						lockSleep := time.Duration(50+prng.Int63n(50)) * time.Millisecond
 						time.Sleep(lockSleep)
 						step(n+1, prng)
 						return
                     case sqlite.SQLITE_MISUSE:
-                        log.Printf("%d !!!! [%p] misuse", n, conn)
+                        log.Printf("%3d !!!! [%p] misuse", n, conn)
                         return
 					default:
-                        log.Printf("%d ???? [%p] a new challenger appears: %+v", n, conn, err)
+                        log.Printf("%3d ???? [%p] a new challenger appears: %+v", n, conn, err)
 						return
 					}
 				}
-				log.Printf("%d .... [%p] %s (%s / %s)", n, conn, r, duration, deadline)
+				log.Printf("%3d .... [%p] %s (%s / %s)", n, conn, r, duration, deadline)
 			} else {
 				duration := time.Since(startTime)
 				if duration >= deadline {
-					log.Printf("%d .... [%p] succeeded %s late", n, conn, duration-deadline)
+					log.Printf("%3d ...+ [%p] succeeded %s late", n, conn, duration-deadline)
 				} else {
-					log.Printf("%d .... [%p] succeeded %s early", n, conn, deadline-duration)
+					log.Printf("%3d ...- [%p] succeeded %s early", n, conn, deadline-duration)
 				}
 			}
 		}()
@@ -101,7 +101,7 @@ func main() {
 		}
         defer pool.Put(conn)
 
-		records := make([]*Human, 4*1000)
+		records := make([]*Human, 15*1000)
 		// id := prng.Int63n(256 * 1024)
         id := int64(0)
 
@@ -117,7 +117,7 @@ func main() {
 		must(c.Save(conn, records))
 	}
 
-	numSteps := 10
+	numSteps := 5
 	done := make(chan bool)
 	worker := func() {
 		prng := rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -128,7 +128,7 @@ func main() {
 
 	globalStartTime := time.Now()
 
-	numWorkers := 3
+	numWorkers := 25
 	log.Printf("Spinning up %d workers doing %d steps...", numWorkers, numSteps)
 	for i := 0; i < numWorkers; i++ {
 		go func() {
