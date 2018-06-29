@@ -50,7 +50,7 @@ func main() {
 	step = func(n int, prng *rand.Rand) {
 		startTime := time.Now()
 		// deadline := time.Duration(100*(8+3*prng.Int63n(2))) * time.Millisecond
-		deadline := 500 * time.Millisecond
+		deadline := 40 * time.Millisecond
         var conn *sqlite.Conn
 
 		defer func() {
@@ -61,33 +61,33 @@ func main() {
 					switch errCode {
 					case sqlite.SQLITE_INTERRUPT:
 						if duration < deadline {
-							log.Printf("%d !!!! [%p] interrupted %s before deadline (%s duration)", n, conn, deadline-duration, duration)
+							log.Printf("%d XXXX [%p] interrupted %s before deadline (%s duration)", n, conn, deadline-duration, duration)
                             // log.Printf("interrupt stack: %+v", err)
 						} else {
-							log.Printf("%d //// [%p] %s after deadline (%s duration)", n, conn, duration-deadline, duration)
+							log.Printf("%d .... [%p] interrupted %s after deadline (%s duration)", n, conn, duration-deadline, duration)
 						}
 						return
 					case sqlite.SQLITE_LOCKED:
-						log.Printf("%d XXXX [%p] locked", n, conn)
+						log.Printf("%d .... [%p] locked", n, conn)
 						lockSleep := time.Duration(50+prng.Int63n(50)) * time.Millisecond
 						time.Sleep(lockSleep)
 						step(n+1, prng)
 						return
                     case sqlite.SQLITE_MISUSE:
-                        log.Printf("%d ZZZZ [%p] misuse", n, conn)
+                        log.Printf("%d !!!! [%p] misuse", n, conn)
                         return
 					default:
                         log.Printf("%d ???? [%p] a new challenger appears: %+v", n, conn, err)
 						return
 					}
 				}
-				log.Printf("%d (((( [%p] %s (%s / %s)", n, conn, r, duration, deadline)
+				log.Printf("%d .... [%p] %s (%s / %s)", n, conn, r, duration, deadline)
 			} else {
 				duration := time.Since(startTime)
 				if duration >= deadline {
-					log.Printf("%d +++- ⚠️  %s late", n, duration-deadline)
+					log.Printf("%d .... [%p] succeeded %s late", n, conn, duration-deadline)
 				} else {
-					log.Printf("%d ++++ %s early", n, deadline-duration)
+					log.Printf("%d .... [%p] succeeded %s early", n, conn, deadline-duration)
 				}
 			}
 		}()
@@ -99,9 +99,9 @@ func main() {
 		if conn == nil {
 			panic("pool timeout")
 		}
-		defer pool.Put(conn)
+        defer pool.Put(conn)
 
-		records := make([]*Human, 30*1000)
+		records := make([]*Human, 4*1000)
 		// id := prng.Int63n(256 * 1024)
         id := int64(0)
 
