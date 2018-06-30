@@ -15,20 +15,6 @@ import (
 )
 
 //===================================================
-// Workarounds
-//===================================================
-var (
-	// This fixes it completely for me (all conns are healthy at the end)
-	neverInterruptQueries = false
-
-	// This doesn't seem to fix anything
-	useTransient = false
-
-	// This lets you attach with a debugger before we touch connections
-	facilitateDebugging = false
-)
-
-//===================================================
 // Simulation parameters (shouldn't need to touch)
 //===================================================
 var (
@@ -56,6 +42,9 @@ var (
 
 	// how many seconds we wait between each round
 	recessSeconds = 2
+
+	// This doesn't seem to fix anything
+	useTransient = false
 )
 
 type ExecFunc = func(conn *sqlite.Conn, query string, resultFn func(stmt *sqlite.Stmt) error, args ...interface{}) error
@@ -249,6 +238,8 @@ func main() {
 		reader.ReadLine()
 	}
 
+	ConvenientBreakpoint()
+
 	log.Printf("Now testing connections...")
 	healthyConns := 0
 	for i := 0; i < poolSize; i++ {
@@ -280,6 +271,10 @@ func main() {
 	} else {
 		log.Printf(" :) ")
 	}
+}
+
+func ConvenientBreakpoint() {
+	// this is to facilitate debug
 }
 
 func must(err error) {
