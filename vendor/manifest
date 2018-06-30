@@ -1,0 +1,13 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/go-xorm/builder",
+			"repository": "https://github.com/go-xorm/builder",
+			"vcs": "git",
+			"revision": "9283e7910554af2071cdb04c71b18e5a6ee1ca40",
+			"branch": "master",
+			"notests": true
+		}
+	]
+}

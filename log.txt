@@ -1,308 +1,287 @@
-Spinning up 20 workers doing 5 steps...
-  0 .... [0xc0421adbd0] locked
-  0 ...- [0xc0421adc70] succeeded 260.9729ms early
-  0 ...- [0xc0421adbd0] succeeded 240.9606ms early
-  0 ...- [0xc0421adc70] succeeded 237.9581ms early
-  0 ...- [0xc0421adbd0] succeeded 216.9445ms early
-  0 ...- [0xc0421adc70] succeeded 213.9425ms early
-  0 ...- [0xc0421adbd0] succeeded 191.9279ms early
-  0 ...- [0xc0421adc70] succeeded 189.9255ms early
-  0 ...- [0xc0421adbd0] succeeded 169.9116ms early
-  0 ...- [0xc0421adc70] succeeded 166.9112ms early
-  0 ...- [0xc0421adbd0] succeeded 145.8951ms early
-  0 ...- [0xc0421adc70] succeeded 144.8949ms early
-  0 ...- [0xc0421adbd0] succeeded 121.8791ms early
-  0 ...- [0xc0421adc70] succeeded 119.8783ms early
-  0 ...- [0xc0421adbd0] succeeded 97.8636ms early
-  0 ...- [0xc0421adc70] succeeded 94.8626ms early
-  0 ...- [0xc0421adbd0] succeeded 74.8482ms early
-  0 ...- [0xc0421adc70] succeeded 69.8459ms early
-  0 ...- [0xc0421adbd0] succeeded 51.8313ms early
-  0 ...- [0xc0421adc70] succeeded 37.8245ms early
-  0 .... [0xc0421adc70] locked
-  0 ...- [0xc0421adbd0] succeeded 23.8162ms early
-  0 ...- [0xc0421adc70] succeeded 24.8153ms early
-  1 ...- [0xc0421adbd0] succeeded 1.799ms early
-  0 .... [0xc0421adc70] interrupted 7.2054ms after deadline (307.2054ms duration)
-  0 .... [0xc0421adbd0] interrupted 8.2071ms after deadline (308.2071ms duration)
-  0 .... [0xc0421adc70] interrupted 200.3µs after deadline (300.2003ms duration)
-  0 .... [0xc0421adbd0] interrupted 199.3µs after deadline (300.1993ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 20.8137ms before deadline (279.1863ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 39.828ms before deadline (260.172ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 36.8178ms before deadline (263.1822ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 56.8398ms before deadline (243.1602ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 54.8364ms before deadline (245.1636ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 75.8514ms before deadline (224.1486ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 74.8503ms before deadline (225.1497ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 91.8606ms before deadline (208.1394ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 93.863ms before deadline (206.137ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 109.8757ms before deadline (190.1243ms duration)
-  0 .... [0xc0421adc70] interrupted 11.2071ms after deadline (311.2071ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 119.8799ms before deadline (180.1201ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 192.9296ms before deadline (107.0704ms duration)
-  1 XXXX [0xc0421adbd0] interrupted 212.9419ms before deadline (87.0581ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 218.948ms before deadline (81.052ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 239.96ms before deadline (60.04ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 239.9609ms before deadline (60.0391ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9674ms before deadline (48.0326ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.968ms before deadline (48.032ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 250.9673ms before deadline (49.0327ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9681ms before deadline (47.0319ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9761ms before deadline (48.0239ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9686ms before deadline (47.0314ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9708ms before deadline (46.0292ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9692ms before deadline (47.0308ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9699ms before deadline (45.0301ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.972ms before deadline (45.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9723ms before deadline (43.0277ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9699ms before deadline (45.0301ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9695ms before deadline (45.0305ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9704ms before deadline (45.0296ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9708ms before deadline (43.0292ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.972ms before deadline (42.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9708ms before deadline (43.0292ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.972ms before deadline (42.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.972ms before deadline (42.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.972ms before deadline (42.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 258.9732ms before deadline (41.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9703ms before deadline (46.0297ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9692ms before deadline (46.0308ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9662ms before deadline (46.0338ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.97ms before deadline (45.03ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9684ms before deadline (45.0316ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.967ms before deadline (47.033ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9669ms before deadline (48.0331ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9665ms before deadline (47.0335ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 249.9636ms before deadline (50.0364ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 250.9652ms before deadline (49.0348ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9666ms before deadline (47.0334ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9654ms before deadline (48.0346ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9664ms before deadline (48.0336ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 250.9652ms before deadline (49.0348ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9671ms before deadline (47.0329ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9664ms before deadline (48.0336ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9664ms before deadline (48.0336ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 250.9657ms before deadline (49.0343ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 249.9661ms before deadline (50.0339ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9698ms before deadline (43.0302ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9735ms before deadline (42.0265ms duration)
-  0 .... [0xc0421adc70] interrupted 201.3µs after deadline (300.2013ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 298.9983ms before deadline (1.0017ms duration)
-  0 .... [0xc0421adc70] interrupted 9.4356ms after deadline (309.4356ms duration)
-All done in 925.8495ms
-Spinning up 20 workers doing 5 steps...
-  0 XXXX [0xc0421adbd0] interrupted 297.9987ms before deadline (2.0013ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 295.9973ms before deadline (4.0027ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 293.9965ms before deadline (6.0035ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 291.9921ms before deadline (8.0079ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 285.983ms before deadline (14.017ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 283.9898ms before deadline (16.0102ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 280.9878ms before deadline (19.0122ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 278.9845ms before deadline (21.0155ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 276.9847ms before deadline (23.0153ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 273.9832ms before deadline (26.0168ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 271.9798ms before deadline (28.0202ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 269.9774ms before deadline (30.0226ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 267.9766ms before deadline (32.0234ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 265.9748ms before deadline (34.0252ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 261.9752ms before deadline (38.0248ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 260.9724ms before deadline (39.0276ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 258.9732ms before deadline (41.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9666ms before deadline (47.0334ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9665ms before deadline (47.0335ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9666ms before deadline (47.0334ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.968ms before deadline (48.032ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9716ms before deadline (48.0284ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9762ms before deadline (44.0238ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9681ms before deadline (44.0319ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9692ms before deadline (43.0308ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9704ms before deadline (42.0296ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9714ms before deadline (42.0286ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9732ms before deadline (44.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9674ms before deadline (45.0326ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.969ms before deadline (44.031ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9717ms before deadline (44.0283ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9717ms before deadline (44.0283ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9712ms before deadline (44.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9694ms before deadline (42.0306ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.969ms before deadline (44.031ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9707ms before deadline (44.0293ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9688ms before deadline (43.0312ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9707ms before deadline (44.0293ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9689ms before deadline (45.0311ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9705ms before deadline (45.0295ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9684ms before deadline (45.0316ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9744ms before deadline (43.0256ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9732ms before deadline (44.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9699ms before deadline (42.0301ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.968ms before deadline (44.032ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9707ms before deadline (44.0293ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9732ms before deadline (44.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9733ms before deadline (43.0267ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9691ms before deadline (44.0309ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9718ms before deadline (43.0282ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9739ms before deadline (43.0261ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9712ms before deadline (43.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9708ms before deadline (43.0292ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.971ms before deadline (42.029ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9707ms before deadline (43.0293ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9687ms before deadline (43.0313ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9718ms before deadline (43.0282ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9734ms before deadline (43.0266ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9733ms before deadline (43.0267ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9697ms before deadline (43.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 259.9712ms before deadline (40.0288ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.974ms before deadline (42.026ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9697ms before deadline (43.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9746ms before deadline (42.0254ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9735ms before deadline (42.0265ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.973ms before deadline (42.027ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9719ms before deadline (42.0281ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9697ms before deadline (43.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9724ms before deadline (43.0276ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9723ms before deadline (43.0277ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9732ms before deadline (44.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9723ms before deadline (43.0277ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9724ms before deadline (43.0276ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.973ms before deadline (42.027ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9693ms before deadline (43.0307ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9722ms before deadline (44.0278ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9697ms before deadline (47.0303ms duration)
-  0 .... [0xc0421adc70] interrupted 4.3954ms after deadline (304.3954ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 297.9971ms before deadline (2.0029ms duration)
-  0 .... [0xc0421adc70] interrupted 8.672ms after deadline (308.672ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 297.9961ms before deadline (2.0039ms duration)
-  0 .... [0xc0421adc70] interrupted 13.4292ms after deadline (313.4292ms duration)
-All done in 930.5789ms
-Spinning up 20 workers doing 5 steps...
-  0 XXXX [0xc0421adbd0] interrupted 297.9982ms before deadline (2.0018ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 295.9973ms before deadline (4.0027ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 293.996ms before deadline (6.004ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 291.9952ms before deadline (8.0048ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 289.9959ms before deadline (10.0041ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 287.9925ms before deadline (12.0075ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 284.9931ms before deadline (15.0069ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 282.984ms before deadline (17.016ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 279.9872ms before deadline (20.0128ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 278.9891ms before deadline (21.0109ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 274.9864ms before deadline (25.0136ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 272.9851ms before deadline (27.0149ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 268.9819ms before deadline (31.0181ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 266.9805ms before deadline (33.0195ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 265.9804ms before deadline (34.0196ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 263.9785ms before deadline (36.0215ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 259.9764ms before deadline (40.0236ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.972ms before deadline (42.028ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9722ms before deadline (44.0278ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9717ms before deadline (47.0283ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9697ms before deadline (47.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9702ms before deadline (47.0298ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9691ms before deadline (47.0309ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9669ms before deadline (48.0331ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.968ms before deadline (48.032ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9619ms before deadline (47.0381ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9733ms before deadline (47.0267ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9669ms before deadline (48.0331ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 250.9647ms before deadline (49.0353ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9688ms before deadline (46.0312ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9672ms before deadline (46.0328ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9693ms before deadline (46.0307ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9647ms before deadline (46.0353ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9683ms before deadline (46.0317ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.969ms before deadline (48.031ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9677ms before deadline (46.0323ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9718ms before deadline (46.0282ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9677ms before deadline (46.0323ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9679ms before deadline (45.0321ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9684ms before deadline (45.0316ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9689ms before deadline (45.0311ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9689ms before deadline (45.0311ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9691ms before deadline (44.0309ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9731ms before deadline (45.0269ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9732ms before deadline (44.0268ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.974ms before deadline (42.026ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.971ms before deadline (45.029ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9682ms before deadline (46.0318ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9691ms before deadline (47.0309ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9698ms before deadline (46.0302ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9707ms before deadline (47.0293ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9676ms before deadline (47.0324ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9684ms before deadline (45.0316ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9675ms before deadline (48.0325ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9671ms before deadline (47.0329ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9697ms before deadline (47.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9704ms before deadline (45.0296ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9713ms before deadline (46.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9702ms before deadline (47.0298ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9702ms before deadline (47.0298ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9702ms before deadline (47.0298ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.969ms before deadline (48.031ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9706ms before deadline (47.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 251.9669ms before deadline (48.0331ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 252.9676ms before deadline (47.0324ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9672ms before deadline (46.0328ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 253.9698ms before deadline (46.0302ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 254.9695ms before deadline (45.0305ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9675ms before deadline (44.0325ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9701ms before deadline (44.0299ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9696ms before deadline (44.0304ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9714ms before deadline (42.0286ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9696ms before deadline (44.0304ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9696ms before deadline (44.0304ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9696ms before deadline (44.0304ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9698ms before deadline (43.0302ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9697ms before deadline (43.0303ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9719ms before deadline (42.0281ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 258.9726ms before deadline (41.0274ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9703ms before deadline (43.0297ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9703ms before deadline (43.0297ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9706ms before deadline (44.0294ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.975ms before deadline (42.025ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9705ms before deadline (42.0295ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.9719ms before deadline (42.0281ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 257.973ms before deadline (42.027ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9739ms before deadline (43.0261ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9716ms before deadline (44.0284ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9717ms before deadline (44.0283ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 256.9713ms before deadline (43.0287ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 255.9711ms before deadline (44.0289ms duration)
-  0 .... [0xc0421adc70] interrupted 4.3769ms after deadline (304.3769ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 298.9967ms before deadline (1.0033ms duration)
-  0 .... [0xc0421adc70] interrupted 11.0151ms after deadline (311.0151ms duration)
-  0 XXXX [0xc0421adbd0] interrupted 297.9966ms before deadline (2.0034ms duration)
-  0 .... [0xc0421adc70] interrupted 12.4264ms after deadline (312.4264ms duration)
-All done in 930.8251ms
+Spinning up 15 workers doing 3 steps...
+  0 ...- [0xc04209e230] succeeded 168.9822ms early
+(+) numUpdates = 4800
+  0 ...- [0xc04209e690] succeeded 107.9623ms early
+(+) numUpdates = 5760
+  1 ...- [0xc04209e230] succeeded 102.9808ms early
+(+) numUpdates = 6912
+  1 ...- [0xc04209e2d0] succeeded 120.9633ms early
+(+) numUpdates = 8294
+  2 ...- [0xc04209e230] succeeded 163.9815ms early
+(+) numUpdates = 9952
+  2 ...- [0xc04209e4b0] succeeded 125.9536ms early
+(+) numUpdates = 11942
+  1 ...- [0xc04209e550] succeeded 126.9604ms early
+(+) numUpdates = 14330
+  3 ...- [0xc04209e4b0] succeeded 67.9643ms early
+(+) numUpdates = 17196
+  1 ...- [0xc04209e2d0] succeeded 88.9433ms early
+(+) numUpdates = 20635
+  0 ...- [0xc04209e0a0] succeeded 105.9478ms early
+(+) numUpdates = 24762
+  1 .... [0xc04209e5f0] interrupted 90.3µs after deadline (136.0903ms duration)
+(-) numUpdates = 22285
+  2 .... [0xc04209e690] interrupted 78.3µs after deadline (118.0783ms duration)
+(-) numUpdates = 20056
+  3 .... [0xc04209e230] interrupted 87.4µs after deadline (131.0874ms duration)
+(-) numUpdates = 18050
+  5 .... [0xc04209e230] interrupted 84.9µs after deadline (128.0849ms duration)
+(-) numUpdates = 16245
+  5 .... [0xc04209e550] interrupted 90.4µs after deadline (137.0904ms duration)
+(-) numUpdates = 14620
+  5 .... [0xc04209e0a0] interrupted 90.4µs after deadline (137.0904ms duration)
+(-) numUpdates = 13158
+  5 ...- [0xc04209e5f0] succeeded 39.9096ms early
+(+) numUpdates = 15789
+  5 .... [0xc04209e230] interrupted 96.8µs after deadline (145.0968ms duration)
+(-) numUpdates = 14210
+  5 .... [0xc04209e690] interrupted 117.6µs after deadline (177.1176ms duration)
+(-) numUpdates = 12789
+  4 .... [0xc04209e4b0] interrupted 121µs after deadline (182.121ms duration)
+(-) numUpdates = 11510
+  5 .... [0xc04209e410] interrupted 131.5µs after deadline (197.1315ms duration)
+(-) numUpdates = 10359
+  5 .... [0xc04209e370] interrupted 131.5µs after deadline (197.1315ms duration)
+(-) numUpdates = 9323
+  5 .... [0xc04209e2d0] interrupted 131.5µs after deadline (197.1315ms duration)
+(-) numUpdates = 8390
+  5 .... [0xc04209e190] interrupted 131.5µs after deadline (197.1315ms duration)
+(-) numUpdates = 7551
+  0 ...- [0xc04209e5f0] succeeded 105.9554ms early
+(+) numUpdates = 9061
+  0 .... [0xc04209e230] interrupted 68.5µs after deadline (101.0685ms duration)
+(-) numUpdates = 8154
+  0 ...- [0xc04209e5f0] succeeded 69.9726ms early
+(+) numUpdates = 9784
+  0 .... [0xc04209e690] interrupted 68µs after deadline (101.068ms duration)
+(-) numUpdates = 8805
+  0 .... [0xc04209e0a0] interrupted 85.5µs after deadline (128.0855ms duration)
+(-) numUpdates = 7924
+  0 .... [0xc04209e550] interrupted 129.4µs after deadline (193.1294ms duration)
+(-) numUpdates = 7131
+  0 ...- [0xc04209e5f0] succeeded 40.9533ms early
+(+) numUpdates = 8557
+  0 .... [0xc04209e2d0] interrupted 84.8µs after deadline (127.0848ms duration)
+(-) numUpdates = 7701
+  0 .... [0xc04209e370] interrupted 74.6µs after deadline (111.0746ms duration)
+(-) numUpdates = 6930
+  0 .... [0xc04209e230] interrupted 74.6µs after deadline (111.0746ms duration)
+(-) numUpdates = 6237
+  0 ...- [0xc04209e5f0] succeeded 95.9721ms early
+(+) numUpdates = 7484
+  0 .... [0xc04209e4b0] interrupted 128.7µs after deadline (192.1287ms duration)
+(-) numUpdates = 6735
+  0 .... [0xc04209e410] interrupted 102.2µs after deadline (153.1022ms duration)
+(-) numUpdates = 6061
+  0 .... [0xc04209e190] interrupted 105.1µs after deadline (155.1051ms duration)
+(-) numUpdates = 5454
+  0 .... [0xc04209e0a0] interrupted 71.1µs after deadline (105.0711ms duration)
+(-) numUpdates = 4908
+  0 ...- [0xc04209e5f0] succeeded 124.9807ms early
+(+) numUpdates = 5889
+  0 .... [0xc04209e690] interrupted 116.5µs after deadline (173.1165ms duration)
+(-) numUpdates = 5300
+  0 .... [0xc04209e550] interrupted 117µs after deadline (173.117ms duration)
+(-) numUpdates = 4770
+  0 .... [0xc04209e2d0] interrupted 1.3822ms after deadline (185.3822ms duration)
+(-) numUpdates = 4293
+  0 .... [0xc04209e370] interrupted 1.3822ms after deadline (185.3822ms duration)
+(-) numUpdates = 3863
+  0 .... [0xc04209e230] interrupted 1.3851ms after deadline (184.3851ms duration)
+All done in 1.1099991s
+Sleeping 2 seconds to let SQLite settle...
+.
+..
+Spinning up 15 workers doing 3 steps...
+  0 ...- [0xc04209e5f0] succeeded 127.991ms early
+(+) numUpdates = 4635
+  0 ...- [0xc04209e5f0] succeeded 70.9762ms early
+(+) numUpdates = 5562
+  0 ...- [0xc04209e5f0] succeeded 48.9631ms early
+(+) numUpdates = 6674
+  0 ...- [0xc04209e5f0] succeeded 23.9484ms early
+(+) numUpdates = 8008
+  0 .... [0xc04209e5f0] interrupted 67.6µs after deadline (102.0676ms duration)
+  0 .... [0x0] pool timeout (102.0676ms / 102ms)
+(-) numUpdates = 7207
+  0 .... [0xc04209e2d0] interrupted 67.6µs after deadline (102.0676ms duration)
+(-) numUpdates = 6486
+  0 .... [0xc04209e230] interrupted 67.6µs after deadline (102.0676ms duration)
+(-) numUpdates = 5837
+  0 ...- [0xc04209e5f0] succeeded 2.9242ms early
+  0 .... [0xc04209e370] interrupted 95.5µs after deadline (143.0955ms duration)
+(-) numUpdates = 5253
+  0 .... [0xc04209e0a0] interrupted 95.5µs after deadline (143.0955ms duration)
+(-) numUpdates = 4727
+  0 .... [0xc04209e410] interrupted 95.5µs after deadline (143.0955ms duration)
+(-) numUpdates = 4254
+  0 .... [0xc04209e4b0] interrupted 95.5µs after deadline (143.0955ms duration)
+(-) numUpdates = 3828
+  0 .... [0xc04209e190] interrupted 95.5µs after deadline (143.0955ms duration)
+  0 .... [0xc04209e550] interrupted 95.5µs after deadline (143.0955ms duration)
+  0 .... [0xc04209e690] interrupted 95.5µs after deadline (143.0955ms duration)
+  0 ...- [0xc04209e5f0] succeeded 64.9517ms early
+(+) numUpdates = 4593
+  0 ...- [0xc04209e5f0] succeeded 157.9821ms early
+(+) numUpdates = 5511
+  0 .... [0xc04209e230] interrupted 80.7µs after deadline (120.0807ms duration)
+(-) numUpdates = 4959
+  0 ...- [0xc04209e5f0] succeeded 126.9609ms early
+(+) numUpdates = 5950
+  0 .... [0xc04209e2d0] interrupted 1.1111ms after deadline (168.1111ms duration)
+(-) numUpdates = 5355
+  0 ...- [0xc04209e5f0] succeeded 103.9471ms early
+(+) numUpdates = 6426
+  0 .... [0xc04209e0a0] interrupted 86.7µs after deadline (126.0867ms duration)
+(-) numUpdates = 5783
+  0 ...- [0xc04209e5f0] succeeded 9.9343ms early
+  0 .... [0xc04209e190] interrupted 84.6µs after deadline (129.0846ms duration)
+(-) numUpdates = 5204
+  0 .... [0xc04209e370] interrupted 107.8µs after deadline (160.1078ms duration)
+(-) numUpdates = 4683
+  0 ...- [0xc04209e5f0] succeeded 66.9425ms early
+(+) numUpdates = 5619
+  0 .... [0xc04209e4b0] interrupted 110.2µs after deadline (165.1102ms duration)
+(-) numUpdates = 5057
+  0 .... [0xc04209e410] interrupted 110.2µs after deadline (165.1102ms duration)
+(-) numUpdates = 4551
+  0 ...- [0xc04209e5f0] succeeded 66.961ms early
+(+) numUpdates = 5461
+  0 ...- [0xc04209e5f0] succeeded 103.9755ms early
+(+) numUpdates = 6553
+  0 .... [0xc04209e0a0] interrupted 89.4µs after deadline (137.0894ms duration)
+(-) numUpdates = 5897
+  0 .... [0xc04209e230] interrupted 121.3µs after deadline (184.1213ms duration)
+(-) numUpdates = 5307
+  0 .... [0xc04209e2d0] interrupted 121.3µs after deadline (184.1213ms duration)
+(-) numUpdates = 4776
+  0 .... [0xc04209e690] interrupted 121.3µs after deadline (184.1213ms duration)
+(-) numUpdates = 4298
+  0 .... [0xc04209e550] interrupted 121.3µs after deadline (184.1213ms duration)
+(-) numUpdates = 3868
+  0 ...- [0xc04209e5f0] succeeded 81.9613ms early
+(+) numUpdates = 4641
+  0 .... [0xc04209e190] interrupted 88.2µs after deadline (136.0882ms duration)
+(-) numUpdates = 4176
+  0 .... [0xc04209e370] interrupted 108.1µs after deadline (165.1081ms duration)
+(-) numUpdates = 3758
+  0 .... [0xc04209e4b0] interrupted 94.3µs after deadline (142.0943ms duration)
+  0 .... [0xc04209e410] interrupted 85.8µs after deadline (130.0858ms duration)
+  0 .... [0xc04209e2d0] interrupted 9.8429ms after deadline (208.8429ms duration)
+  0 .... [0xc04209e690] interrupted 9.8429ms after deadline (208.8429ms duration)
+  0 .... [0xc04209e230] interrupted 9.8429ms after deadline (208.8429ms duration)
+  0 .... [0xc04209e0a0] interrupted 9.8429ms after deadline (208.8429ms duration)
+All done in 536.1675ms
+Sleeping 2 seconds to let SQLite settle...
+.
+..
+Spinning up 15 workers doing 3 steps...
+  0 ...- [0xc04209e5f0] succeeded 139.9875ms early
+(+) numUpdates = 4509
+  0 ...- [0xc04209e5f0] succeeded 78.981ms early
+(+) numUpdates = 5410
+  0 ...- [0xc04209e5f0] succeeded 58.9672ms early
+(+) numUpdates = 6492
+  0 ...- [0xc04209e5f0] succeeded 35.9523ms early
+(+) numUpdates = 7790
+  0 ...- [0xc04209e5f0] succeeded 2.9282ms early
+  0 .... [0xc04209e5f0] interrupted 72.7µs after deadline (112.0727ms duration)
+(-) numUpdates = 7011
+  0 .... [0xc04209e0a0] interrupted 72.7µs after deadline (112.0727ms duration)
+(-) numUpdates = 6309
+  0 .... [0xc04209e230] interrupted 72.7µs after deadline (112.0727ms duration)
+(-) numUpdates = 5678
+  0 ...- [0xc04209e5f0] succeeded 67.9234ms early
+(+) numUpdates = 6813
+  0 .... [0xc04209e0a0] interrupted 69.1µs after deadline (102.0691ms duration)
+(-) numUpdates = 6131
+  0 .... [0xc04209e690] interrupted 105µs after deadline (158.105ms duration)
+(-) numUpdates = 5517
+  0 ...- [0xc04209e5f0] succeeded 57.9466ms early
+(+) numUpdates = 6620
+  0 .... [0xc04209e410] interrupted 105µs after deadline (158.105ms duration)
+(-) numUpdates = 5958
+  0 .... [0xc04209e4b0] interrupted 105µs after deadline (158.105ms duration)
+(-) numUpdates = 5362
+  0 .... [0xc04209e190] interrupted 105µs after deadline (158.105ms duration)
+  0 .... [0xc04209e2d0] interrupted 105µs after deadline (158.105ms duration)
+(-) numUpdates = 4342
+(-) numUpdates = 4825
+  0 .... [0xc04209e550] interrupted 105µs after deadline (158.105ms duration)
+(-) numUpdates = 3907
+  0 .... [0xc04209e370] interrupted 105µs after deadline (158.105ms duration)
+  0 ...- [0xc04209e5f0] succeeded 134.962ms early
+(+) numUpdates = 4688
+  0 ...- [0xc04209e5f0] succeeded 123.9772ms early
+(+) numUpdates = 5625
+  0 ...- [0xc04209e5f0] succeeded 103.9643ms early
+(+) numUpdates = 6750
+  0 .... [0xc04209e230] interrupted 115.7µs after deadline (174.1157ms duration)
+(-) numUpdates = 6075
+  0 ...- [0xc04209e5f0] succeeded 71.9419ms early
+(+) numUpdates = 7290
+  0 .... [0xc04209e0a0] interrupted 94.4µs after deadline (146.0944ms duration)
+(-) numUpdates = 6561
+  0 .... [0xc04209e690] interrupted 98.6µs after deadline (150.0986ms duration)
+(-) numUpdates = 5904
+  0 .... [0xc04209e550] interrupted 71.4µs after deadline (107.0714ms duration)
+(-) numUpdates = 5313
+  0 ...- [0xc04209e5f0] succeeded 51.9286ms early
+(+) numUpdates = 6375
+  0 .... [0xc04209e190] interrupted 98.6µs after deadline (150.0986ms duration)
+(-) numUpdates = 5737
+  0 ...- [0xc04209e5f0] succeeded 68.9558ms early
+(+) numUpdates = 6884
+  0 .... [0xc04209e410] interrupted 129.2µs after deadline (195.1292ms duration)
+(-) numUpdates = 6195
+  0 .... [0xc04209e0a0] interrupted 95.9µs after deadline (142.0959ms duration)
+(-) numUpdates = 5575
+  0 .... [0xc04209e2d0] interrupted 106.1µs after deadline (159.1061ms duration)
+(-) numUpdates = 5017
+  0 .... [0xc04209e230] interrupted 106.1µs after deadline (159.1061ms duration)
+(-) numUpdates = 4515
+  0 .... [0xc04209e370] interrupted 106.1µs after deadline (159.1061ms duration)
+(-) numUpdates = 4063
+  0 ...- [0xc04209e5f0] succeeded 127.959ms early
+(+) numUpdates = 4875
+  0 .... [0xc04209e4b0] interrupted 122.2µs after deadline (183.1222ms duration)
+(-) numUpdates = 4387
+  0 .... [0xc04209e690] interrupted 91.5µs after deadline (137.0915ms duration)
+(-) numUpdates = 3948
+  0 ...- [0xc04209e5f0] succeeded 73.9811ms early
+(+) numUpdates = 4737
+  0 .... [0xc04209e550] interrupted 99.5µs after deadline (146.0995ms duration)
+(-) numUpdates = 4263
+  0 .... [0xc04209e190] interrupted 83.1µs after deadline (126.0831ms duration)
+(-) numUpdates = 3836
+  0 .... [0xc04209e230] interrupted 70.3µs after deadline (106.0703ms duration)
+  0 .... [0xc04209e2d0] interrupted 69.8µs after deadline (103.0698ms duration)
+  0 .... [0xc04209e370] interrupted 69.8µs after deadline (103.0698ms duration)
+  0 .... [0xc04209e410] interrupted 108.4µs after deadline (160.1084ms duration)
+  0 .... [0xc04209e0a0] interrupted 119.9µs after deadline (178.1199ms duration)
+All done in 443.3876ms
+Sleeping 2 seconds to let SQLite settle...
+.
+..
+Now testing connections...
+Testing connection 0...
+[0] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 1...
+[1] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 2...
+Testing connection 3...
+[3] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 4...
+[4] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 5...
+[5] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 6...
+[6] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 7...
+[7] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 8...
+[8] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Testing connection 9...
+[9] sqlite.Exec: Stmt.Step: SQLITE_INTERRUPT (SELECT * FROM thieves LIMIT 1)
+Found 1 / 10 healthy conns
+ :( 
